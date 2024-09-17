@@ -1,0 +1,47 @@
+name: vr_46_inventory
+description: "A new Flutter project."
+publish_to: 'none' # Evita publicación en pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.5.3
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Para íconos de estilo iOS
+  cupertino_icons: ^1.0.8
+
+  # Para manejo de estado (Provider)
+  provider: ^6.0.0
+
+  # Para la base de datos SQLite local
+  sqflite: ^2.0.0+4
+  path: ^1.8.0
+
+  # Para formateo de números
+  intl: ^0.19.0  # Mantén esta versión
+
+
+
+dev_dependencies:
+  flutter_launcher_icons: ^0.10.0
+  flutter_test:
+    sdk: flutter
+  flutter_local_notifications: ^17.2.2
+  # Reglas de lint para buenas prácticas de código
+  flutter_lints: ^4.0.0
+
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/icon/app_icon.png" 
+
+flutter:
+  uses-material-design: true
+
+  # Sección para agregar imágenes, íconos o fuentes personalizadas en el futuro.
+  assets:
+    - assets/logo.png

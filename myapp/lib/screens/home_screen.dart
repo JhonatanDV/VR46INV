@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'add_edit_product_screen.dart';
 import 'sell_product_screen.dart';
-import 'sales_report_screen.dart'; // Asegúrate de que esta ruta sea correcta
+import 'sales_report_screen.dart'; 
 import '../models/product.dart';
 import '../services/database_helper.dart';
 
@@ -16,7 +16,7 @@ class _HomeScreenState extends State<HomeScreen> {
   final DatabaseHelper _databaseHelper = DatabaseHelper();
   List<Product> _products = [];
   List<Product> _filteredProducts = [];
-  TextEditingController _searchController = TextEditingController();
+  final TextEditingController _searchController = TextEditingController();
 
   @override
   void initState() {
@@ -71,7 +71,7 @@ class _HomeScreenState extends State<HomeScreen> {
         builder: (context) => const SalesReportScreen(),
       ),
     );
-    _refreshProducts(); // Opcional: actualiza los productos después de regresar
+    _refreshProducts(); //actualiza los productos después de regresar
   }
 
   @override
@@ -98,7 +98,7 @@ class _HomeScreenState extends State<HomeScreen> {
               controller: _searchController,
               decoration: InputDecoration(
                 hintText: 'Search products...',
-                prefixIcon: Icon(Icons.search),
+                prefixIcon: const Icon(Icons.search),
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(8.0),
                 ),
@@ -109,7 +109,7 @@ class _HomeScreenState extends State<HomeScreen> {
             child: Stack(
               children: [
                 Container(
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     gradient: LinearGradient(
                       colors: [Colors.yellow, Colors.orange],
                       begin: Alignment.topLeft,

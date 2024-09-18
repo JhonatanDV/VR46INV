@@ -31,7 +31,6 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_local_notifications: ^17.2.2
-  # Reglas de lint para buenas prácticas de código
   flutter_lints: ^4.0.0
 
 flutter_icons:

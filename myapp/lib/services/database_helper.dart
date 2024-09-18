@@ -2,7 +2,7 @@ import 'package:sqflite/sqflite.dart';
 import 'package:path/path.dart';
 import '../models/product.dart';
 import '../models/sale.dart';
-import 'package:intl/intl.dart'; // Asegúrate de importar intl para formatear fechas
+import 'package:intl/intl.dart'; 
 
 class DatabaseHelper {
   static final DatabaseHelper _instance = DatabaseHelper._internal();

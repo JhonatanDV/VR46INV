@@ -61,7 +61,7 @@ class _SellProductScreenState extends State<SellProductScreen> {
                       },
                     ),
                     TextField(
-                      keyboardType: TextInputType.numberWithOptions(decimal: true),
+                      keyboardType: const TextInputType.numberWithOptions(decimal: true),
                       decoration: const InputDecoration(labelText: 'Discount (%)'),
                       onChanged: (value) {
                         setState(() {

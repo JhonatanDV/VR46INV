@@ -10,7 +10,7 @@ class BackgroundWidget extends StatelessWidget {
     return Stack(
       children: [
         Container(
-          decoration: BoxDecoration(
+          decoration: const BoxDecoration(
             gradient: LinearGradient(
               colors: [Colors.yellow, Colors.orange],
               begin: Alignment.topLeft,
